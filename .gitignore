@@ -1,4 +1,5 @@
 node_modules
+API_KEY.ts
 dist/*
 .vscode/*
 npm-debug.log
