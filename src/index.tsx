@@ -8,7 +8,10 @@ import API_KEY from '../API_KEY';
 import { SearchBar, VideoDetail, VideoListDetail, VideoList } from './components';
 
 const App = () => {
-    return <div>Hello World!</div>;
+  return (
+    <div>
+      <SearchBar />
+    </div>)
  }
 
 ReactDOM.render(<App />, document.querySelector('.container'))
