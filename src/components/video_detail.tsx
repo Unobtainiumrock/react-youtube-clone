@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const VideoDetail = () => {
-  return 5;
+  return <input />;
 }
 
-export default VideoDetail;
+export default <VideoDetail />;

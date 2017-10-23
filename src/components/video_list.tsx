@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const VideoList = () => {
-  return 3;
+  return <input />;
 }
 
-export default VideoList;
+export default < VideoList />;
