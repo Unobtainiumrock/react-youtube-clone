@@ -4,4 +4,4 @@ const VideoListDetail =  () => {
   return <input />;
 }
 
-export default <VideoListDetail />;
+export default VideoListDetail;
