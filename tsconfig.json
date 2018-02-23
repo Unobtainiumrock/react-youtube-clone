@@ -2,14 +2,18 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "sourceMap": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "module": "commonjs",
     "target": "es5",
     "moduleResolution": "node",
     "baseUrl": "src",
     "jsx": "react",
-    "allowJs": true
+    "allowJs": true,
   },
-  "include": [ "src/**/*.tsx" ],
+  "include": [
+    "src/**/*.ts",
+     "src/**/*.tsx",
+     "src/**/*.js"
+     ],
   "exlcude": [ "node_modules" ]
 }

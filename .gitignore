@@ -3,6 +3,8 @@
 node_modules/
 
 ## Compiled Files ##
+node_modules
+
 dist/*
 
 ## Visual Studio
@@ -10,3 +12,6 @@ dist/*
 
 ## NPM misc ##
 npm-debug.log
+
+## API_KEY ##
+API_KEY.ts
