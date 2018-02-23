@@ -1,4 +1,12 @@
-node_modules
+
+## NPM ##
+node_modules/
+
+## Compiled Files ##
 dist/*
+
+## Visual Studio
 .vscode/*
+
+## NPM misc ##
 npm-debug.log
