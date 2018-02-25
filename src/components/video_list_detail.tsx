@@ -1,7 +1,10 @@
 import * as React from 'react';
 
-const VideoListDetail =  () => {
+class VideoListDetail extends React.Component<any ,any> {
+
+  render() {
   return <input />;
+  }
 }
 
 export default VideoListDetail;
