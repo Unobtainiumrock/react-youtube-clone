@@ -10,12 +10,16 @@ import API_KEY from './API_KEY';
 // App Components
 import { SearchBar, VideoDetail, VideoListDetail, VideoList } from './components/index';
 
+
+// Top level of component tree. This is where the main app resides.
+// All props are passed from here (top-down data flow)
 class App extends React.Component<any, any> {
   constructor(props: any) {
     super(props)
 
     this.state = { videos: [] };
 
+    //Populate state with a default video search
     YTsearch({ key: API_KEY, term: 'Composition Over Inheritance' }, (videos) => {
       this.setState({ videos });
     })
