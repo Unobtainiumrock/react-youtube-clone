@@ -4,27 +4,27 @@ import { VideoListItem } from './index'
 class VideoList extends React.Component<any, any>  { 
   constructor(props: any) {
     super(props);
-
+    
     this.state = {
       videos: []
     }
-
-    this.addVideos = this.addVideos.bind(this);
-  }
-
-  addVideos() {
-    this.setState({
-      videos: this.props.videos.map((video) => {
-        return <VideoListItem video={video} />
-      })
-    })
   }
   
+
+
   render() {
-    this.addVideos();
+    let videos;
+    let dog = 7;
+    console.log(dog);
+    if(this.props.videos.length) {
+      videos = this.props.videos.map((video) => {
+        return <VideoListItem video={video} />
+      })
+    }
+
     return (
       <ul className="col-md-4 list-group">
-        {this.state.videos}
+        {videos}
       </ul>
     )
   }
