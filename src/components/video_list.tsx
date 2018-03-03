@@ -14,11 +14,14 @@ class VideoList extends React.Component<any, any>  {
 
   render() {
     let videos;
-    let dog = 7;
-    console.log(dog);
+
     if(this.props.videos.length) {
       videos = this.props.videos.map((video) => {
-        return <VideoListItem video={video} />
+        return (
+          <React.Fragment>
+          <VideoListItem video={video} />
+          </React.Fragment>
+        )
       })
     }
 
