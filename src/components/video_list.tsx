@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { VideoListItem } from './index'
 
+const Fragment = React.Fragment;
+
 class VideoList extends React.Component<any, any>  { 
   constructor(props: any) {
     super(props);
@@ -10,17 +12,15 @@ class VideoList extends React.Component<any, any>  {
     }
   }
   
-
-
   render() {
     let videos;
 
     if(this.props.videos.length) {
       videos = this.props.videos.map((video) => {
         return (
-          <React.Fragment>
+          <Fragment key={video.etag}>
           <VideoListItem video={video} />
-          </React.Fragment>
+          </Fragment>
         )
       })
     }
