@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { VideoListItem } from './index'
 
@@ -6,10 +7,6 @@ const Fragment = React.Fragment;
 class VideoList extends React.Component<any, any>  { 
   constructor(props: any) {
     super(props);
-    
-    this.state = {
-      videos: []
-    }
   }
   
   render() {
@@ -19,7 +16,7 @@ class VideoList extends React.Component<any, any>  {
       videos = this.props.videos.map((video) => {
         return (
           <Fragment key={video.etag}>
-          <VideoListItem video={video} />
+            <VideoListItem video={video} />
           </Fragment>
         )
       })

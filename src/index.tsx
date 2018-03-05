@@ -17,17 +17,24 @@ class App extends React.Component<any, any> {
   constructor(props: any) {
     super(props)
 
-    this.state = { videos: [] };
+    this.state = { 
+      videos: [],
+      selectedVideo: null
+     };
 
     //Populate state with a default video search
     YTsearch({ key: API_KEY, term: 'Composition Over Inheritance' }, (videos) => {
-      this.setState({ videos });
+      this.setState({ 
+        videos: videos,
+        selectedVideo: videos[0]
+      });
     })
   }
   render() {
     return (
       <div>
         <SearchBar />
+        <VideoDetail video={this.state.selectedVideo}/>
         <VideoList videos={this.state.videos} />
       </div>)
   }
