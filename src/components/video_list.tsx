@@ -5,9 +5,9 @@ import { VideoListItem } from './index'
 const Fragment = React.Fragment;
 
 class VideoList extends React.Component<any, any>  { 
-  constructor(props: any) {
-    super(props);
-  }
+  // constructor(props: any) {
+  //   super(props);
+  // }
   
   render() {
     let videos;

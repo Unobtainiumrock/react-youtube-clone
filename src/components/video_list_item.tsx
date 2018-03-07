@@ -1,9 +1,9 @@
 import * as React from 'react';
 
 class VideoListItem extends React.Component<any, any> {
-  constructor(video: any) {
-    super(video);
-  }
+  // constructor(video: any) {
+  //   super(video);
+  // }
 
   render(){
     const video = this.props.video;
