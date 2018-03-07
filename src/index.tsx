@@ -30,14 +30,18 @@ class App extends React.Component<any, any> {
       });
     })
   }
+
   render() {
     return (
       <div>
         <SearchBar />
         <VideoDetail video={this.state.selectedVideo}/>
-        <VideoList videos={this.state.videos} />
+        <VideoList
+         onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+         videos={this.state.videos} />
       </div>)
   }
  }
 
 ReactDOM.render(<App />, document.querySelector('.container'))
+ 
