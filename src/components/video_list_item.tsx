@@ -6,11 +6,12 @@ class VideoListItem extends React.Component<any, any> {
   // }
 
   render(){
-    const video = this.props.video;
+    
+    const {video, onVideoSelect} = this.props;
     const imageUrl = video.snippet.thumbnails.default.url;
     
     return (
-      <li className="list-group-item">
+      <li onClick={() => onVideoSelect(video) } className="list-group-item">
         <div className="video-list media">
 
           <div className="media-left">

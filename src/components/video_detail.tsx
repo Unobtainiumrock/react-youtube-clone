@@ -6,8 +6,8 @@ const VideoDetail = (props: any) => {
     return <div>Loading..</div>
   }
 
-  const video = props.video;
-  const videoId = video.id.videoId;
+  const { video } = props;
+  const { videoId } = video.id;
   const url = `https://www.youtube.com/embed/${videoId}`;
 
     return (
